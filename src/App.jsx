@@ -739,7 +739,7 @@ export default function App() {
         </div>
 
         {/* Sidebar Footer */}
-        <div className="p-4 border-t border-slate-800/80 bg-slate-950/40 flex items-center justify-between">
+        <div className="p-4 border-t border-slate-800/80 bg-slate-950/40 flex flex-col gap-2.5">
           <button
             onClick={() => setActiveTab("settings")}
             className={`flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs font-semibold w-full transition-all ${
@@ -751,6 +751,13 @@ export default function App() {
             <Settings size={15} />
             <span>Settings & Backup</span>
           </button>
+          
+          <div className="text-[10px] text-slate-500 text-center font-medium border-t border-slate-900/60 pt-2 flex items-center justify-center gap-1">
+            <span>Created with</span>
+            <span className="text-rose-500 animate-pulse">❤️</span>
+            <span>by</span>
+            <span className="text-slate-400 hover:text-indigo-400 font-semibold transition-colors duration-200">Dharav Antani</span>
+          </div>
         </div>
       </aside>
 
@@ -1036,6 +1043,17 @@ export default function App() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {renderCategoryCards()}
                 </div>
+              </div>
+
+              {/* Dashboard Credit Footer */}
+              <div className="border-t border-slate-900 pt-6 pb-2 text-center text-xs text-slate-500 flex flex-col items-center gap-1.5">
+                <div className="flex items-center gap-1">
+                  <span>Created with</span>
+                  <span className="text-rose-500 animate-pulse">❤️</span>
+                  <span>by</span>
+                  <span className="text-slate-350 hover:text-indigo-400 font-semibold transition-colors duration-250">Dharav Antani</span>
+                </div>
+                <p className="text-[10px] text-slate-600 font-mono">BIXTracker © {new Date().getFullYear()} — All rights reserved.</p>
               </div>
             </div>
           ) : activeTab === "settings" ? (
