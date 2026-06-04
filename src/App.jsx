@@ -936,7 +936,7 @@ export default function App() {
                     }}
                     className="mt-6 w-full bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-lg shadow-indigo-600/25 transition-all cursor-pointer"
                   >
-                    <span>{lastSession ? "Jump Back In" : "Start Coding Practice"}</span>
+                    <span>{lastSession ? "Jump Back In" : "Start Practice"}</span>
                     <ArrowRight size={14} />
                   </button>
                 </div>
